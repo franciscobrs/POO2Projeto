@@ -40,10 +40,10 @@
         <div class="collapse navbar-collapse" id="navbarResponsive" >
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#page-top">Inicio</a>
+              <a class="nav-link js-scroll-trigger" href="index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#agenda ">Agenda</a>
+              <a class="nav-link js-scroll-trigger" href="calendar.html">Agenda</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="about.html">Sobre</a>
@@ -59,94 +59,70 @@
       </div>
     </nav>
   
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container">
-        <div class="intro-text">
-          <div class="intro-lead-in">Seja muito bem vindo!</div>
-          <div class="intro-heading text-center">Junte-se à milhares de pessoas e dê mais visibilidade ao seu evento!</div>
-          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="eventRegistry.html">Saiba Mais</a>
-        </div>
-      </div>
-    </header>
-     
-    </header>
-    <!-- Separa nossa página em diferentes seções -->
-    <section id="agenda">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Agenda</h2>
-            <h3 class="section-subheading text-muted">Confira os próximos eventos!  </h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12">
-            <ul class="timeline">
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid"  style="width: 100%; height: 100%;" src="./img/eventImage/bananalama.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>13ª BANANALAMA - 2019</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Além da tradicional trilha,
-                       shows com bandas nacionais e atrações radicais são responsáveis por levar ainda mais emoção ao Seminário Sagrado Coração de Jesus,
-                        local onde é feita a concentração do Bananalama.</p>
-                  </div>
-                </div>
-              </li>
-              
-              
-              
+    
+  <!-- Header -->
+<header class="masthead">
+  <div class="container">
+      <div class="eventRegistryFormBackground">
+      <div class="row">
+          <div class="col-md-12 col-md-offset-2">
+              <div class="panel panel-default">
+                  <hr>
+                  <div class="panel-heading">PUBLIQUE SEU EVENTO!!</div>
+                  <hr>
+                  <div class="panel-body">
+                      <form id="eventregitryform">
+                          <fieldset>
+                              <label for="name">Título do Evento:</label>
+                              <input required cf-questions="Título do Evento" type="text" name="name" id="name">
+                          </fieldset>
+                          <br>
+                          <fieldset>
+                            <label for="data">Data:</label>
+                            <input required cf-questions="Qual a data do evento?" type="date" name="data" id="data">
+                        </fieldset>
+                        <br>
+                          <fieldset>
+                              <label for="endereco">Endereço do Evento:</label>
+                              <input cf-questions="Qual o endereço do evento?" type="text" name="endereco" id="endereco">
+                          </fieldset>
+                          <br>
+                          <fieldset>
+                            <label for="site">Site Oficial:</label>
+                            <input required cf-questions="Qual o site oficial do evento?" type="text" name="site" id="site">
+                        </fieldset>
+                        <br>
+                        <fieldset>
+                          <label for="email">Email para Contato:</label>
+                          <input pattern=".+\@.+\..+" cf-error="E-mail not correct" cf-questions="If you want to stay updated, please give us your email." type="email" name="email" id="your-email">
+                      </fieldset>
+                        <br>
 
-                    <li class="timeline-inverted">
-                <div class="timeline-image " >
-                  <img class="rounded-circle img-fluid" style="width: 100%; height: 100%;" src="./img/eventImage/trilhaodapicada.jpg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>2º TRILHÃO DA PICADA</h4>
+                        <fieldset> 
+                            <label for="imgevento">Imagem do Evento:</label>
+                            <input type="file" id="imgevento" name="imgevento">
+                    </fieldset>
+                    <br>
+                        <fieldset>
+                            <label for="descricao">Descrição:</label>
+                            <textarea class="description" name="descricao" id="description" cols="30" rows="10"></textarea>
+                          <br>
+
+                      </fieldset>                    
+                          <hr>
+                          <button type="submit" class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Cadastrar</button>
+                          <hr>
+                          
+                      </form>
                   </div>
-                  <div class="timeline-body">
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                  </div>
-                </div>
-              </li>
-              
-              
-              
-              <li>
-                <div class="timeline-image">
-                  <img class="rounded-circle img-fluid" style="width: 100%; height: 100%;" src="./img/eventImage/trilhadocarvao.jpeg" alt="">
-                </div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h4>December 2012</h4>
-                    <h4 class="subheading">Transition to Full Service</h4>
-                  </div>
-                  <div class="timeline-body">
-                    <p class="text-muted"></p>
-                  </div>
-                </div>
-              </li>
-            
-              <li class="timeline-inverted">
-                <div class="timeline-image">
-                  <h4><a href="calendar.html" style="color: #212529">
-                        Veja
-                      <br>Mais
-                      <br>Eventos!
-                    </a></h4>
-                </div>
-              </li>
-            </ul>
+              </div>
+          </div>    
           </div>
-        </div>
       </div>
-    </section>
+  </div>
+</header>
+ 
+</header>
 
   <!-- Contact -->
     <section id="contact">
@@ -244,3 +220,16 @@
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
